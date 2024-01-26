@@ -1,5 +1,3 @@
 export const Login = () => {
-  return (
-    <div>Login</div>
-  )
-}
+    return <div className="h-[200vh]">Login</div>;
+};

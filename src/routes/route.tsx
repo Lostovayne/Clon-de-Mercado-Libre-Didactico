@@ -1,11 +1,11 @@
 import { Navigate, createBrowserRouter } from "react-router-dom";
-import { Carrito, Layout, HomePage, AuthLayout, Login, Register } from "../page";
+import { Carrito, Layout, HomePage, AuthLayout, Login, Register, Error } from "../page";
 
 export const router = createBrowserRouter([
     {
         path: "/",
         element: <Layout />,
-        errorElement: <div>Error</div>,
+        errorElement: <Error />,
         children: [
             {
                 path: "/",
@@ -21,7 +21,7 @@ export const router = createBrowserRouter([
     {
         path: "/auth",
         element: <AuthLayout />,
-        errorElement: <div>Error</div>,
+        errorElement: <Error />,
         children: [
             {
                 path: "login",
