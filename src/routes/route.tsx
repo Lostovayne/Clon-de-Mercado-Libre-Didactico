@@ -1,5 +1,5 @@
-import { createBrowserRouter } from "react-router-dom";
-import { Carrito, Layout, HomePage, AuthLayout } from "../page";
+import { Navigate, createBrowserRouter } from "react-router-dom";
+import { Carrito, Layout, HomePage, AuthLayout, Login, Register } from "../page";
 
 export const router = createBrowserRouter([
     {
@@ -12,7 +12,7 @@ export const router = createBrowserRouter([
                 element: <HomePage />,
             },
             {
-                path: "/carrito",
+                path: "carrito",
                 element: <Carrito />,
             },
         ],
@@ -22,6 +22,19 @@ export const router = createBrowserRouter([
         path: "/auth",
         element: <AuthLayout />,
         errorElement: <div>Error</div>,
-        children: [],
+        children: [
+            {
+                path: "login",
+                element: <Login />,
+            },
+            {
+                path: "register",
+                element: <Register />,
+            },
+            {
+                path: "*",
+                element: <Navigate to="/auth/login" />,
+            },
+        ],
     },
 ]);
