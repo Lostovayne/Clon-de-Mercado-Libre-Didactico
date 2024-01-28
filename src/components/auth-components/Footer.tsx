@@ -1,6 +1,6 @@
 export const Footer = () => {
     return (
-        <div className="p-7 flex justify-between">
+        <div className="p-7 flex justify-between bg-[#f5f5f5]">
             <div className="text-xs flex gap-1 justify-start">
                 <a href="#" className="text-blue-500 text-xs font-semibold">
                     Cómo cuidamos tu privacidad
