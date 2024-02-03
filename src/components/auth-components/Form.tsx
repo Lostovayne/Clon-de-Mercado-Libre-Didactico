@@ -24,7 +24,7 @@ export const Form = () => {
     };
 
     return (
-        <div className="border rounded-lg mt-16 p-12">
+        <div className="border border-gray-300 rounded-lg mt-16 p-12">
             <form onSubmit={(event) => handleChange(event)}>
                 <fieldset className="space-y-2">
                     <Label className="font-semibold text-gray-600 " htmlFor="email">
@@ -35,7 +35,7 @@ export const Form = () => {
                         name="email"
                         id="email"
                         placeholder=""
-                        className="xl:w-96 py-6 font-semibold text-gray-600 "
+                        className="xl:w-96 py-6 font-semibold text-gray-600"
                         value={email}
                         onChange={(event) => setEmail(event.target.value)}
                     />
