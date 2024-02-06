@@ -6,10 +6,10 @@ export const SearchBar = () => {
             <div className="bg-white flex items-center gap-2 px-3 min-w-[500px] flex-1 ">
                 <Input
                     placeholder="Buscar productos,marcas y más..."
-                    className="ring-none ring-0  border-none outline-none focus:ring-0 focus-visible:ring-0 w-full"
+                    className="ring-none ring-0  border-none outline-none focus:ring-0 focus-visible:ring-0 w-full text-gray-500"
                     type="text"
                 />
-                <CiSearch className="h-6 w-6 text-gray-600 " />
+                <CiSearch className="h-6 w-6 text-gray-500 " />
             </div>
             <ul>
                 <li className="*:text-sm *:text-gray-700 *:px-1 *:mx-1  mt-4">
