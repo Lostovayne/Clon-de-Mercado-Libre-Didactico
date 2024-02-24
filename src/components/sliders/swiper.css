@@ -1,0 +1,33 @@
+:root {
+    --swiper-navigation-size: 22px;
+}
+
+.swiper-button-next {
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    font-size: 10px;
+    padding: 2rem;
+    border-radius: 100%;
+    position: absolute;
+    top: 50%;
+    translate: 0 -50%;
+    right: 0;
+    z-index: 50;
+}
+
+.swiper-button-prev {
+    background-color: #ffffff;
+    box-shadow: 0 2px 3px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    font-size: 10px;
+    padding: 2rem;
+    border-radius: 100%;
+    position: absolute;
+    top: 50%;
+    translate: 0 -50%;
+    left: 0px;
+    z-index: 10;
+}
+
+.swiper-button-disabled {
+    display: none;
+}
